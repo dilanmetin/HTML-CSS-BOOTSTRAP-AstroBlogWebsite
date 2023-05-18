@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proje-3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    #social a,
+    i {
+      transition: all 0.3s linear;
+    }
+    #social a:hover i {
+      transform: scale(1.2);
+    }
+    .article a{
+      text-decoration: none;
+      color: black;
+    }
+    #horoscope a {
+      text-decoration: none;
+      font-size: 19px;
+      color: black;
+    }
+
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><span><i class="fa-brands fa-blogger fa-lg"></i></span> AstroBlog</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Consultancy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Training</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Others
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Birth Chart</a></li>
+                <li><a class="dropdown-item" href="#">Articles</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Login</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control form-control-sm me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-sm btn-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/image-4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Astrologer</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                beatae tempora quos facilis asperiores quidem quisquam
+                distinctio dicta assumenda sequi. Facere perspiciatis obcaecati
+                excepturi!
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Classical Astrology</li>
+              <li class="list-group-item">Financial Astrology</li>
+              <li class="list-group-item">Karma Astrology</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+            <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide mt-3">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              style="height: 300px"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="img/image-1.jpg"
+                    class="d-block w-100"
+                    height="300"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="img/image-2.jpg"
+                    class="d-block w-100"
+                    height="300"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/image-3.jpg"
+                    class="d-block w-100"
+                    height="300"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+            <!-- chart -->
+          <div class="card mt-3">
+            <div class="card-header fw-bold">Free Birth Chart</div>
+            <div class="card-body">
+              <h5 class="card-title">Enter date and time of birth</h5>
+
+              <div id="form">
+                <div class="form-group row">
+                  <label class="col-form-label text-right col-lg-3 col-sm-12"
+                    >Birth Date</label
+                  >
+                  <div class="col-lg-6 col-md-9 col-sm-12">
+                    <div
+                      class="input-group input-group-solid date"
+                      id="kt_datetimepicker_3"
+                      data-target-input="nearest"
+                    >
+                      <input
+                        type="text"
+                        class="form-control form-control-solid datetimepicker-input"
+                        placeholder="Select date"
+                        data-target="#kt_datetimepicker_3"
+                      />
+                      <div
+                        class="input-group-append"
+                        data-target="#kt_datetimepicker_3"
+                        data-toggle="datetimepicker"
+                      >
+                        <span class="input-group-text h-100">
+                          <i class="fa-regular fa-calendar"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row my-2">
+                  <label class="col-form-label text-right col-lg-3 col-sm-12"
+                    >Birth Time</label
+                  >
+                  <div class="col-lg-6 col-md-9 col-sm-12">
+                    <div
+                      class="input-group input-group-solid date"
+                      id="kt_datetimepicker_4"
+                      data-target-input="nearest"
+                    >
+                      <input
+                        type="text"
+                        class="form-control form-control-solid datetimepicker-input"
+                        placeholder="Select time"
+                        data-target="#kt_datetimepicker_4"
+                      />
+                      <div
+                        class="input-group-append"
+                        data-target="#kt_datetimepicker_4"
+                        data-toggle="datetimepicker"
+                      >
+                        <span class="input-group-text h-100">
+                          <i class="fa-regular fa-clock"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-info">Calculate</a>
+            </div>
+          
+          </div>
+              <!-- article -->
+          <div class="card mt-3 mb-3 " >
+            <div class="card-header fw-bold">Article-1</div>
+            <div class="card-body">
+              <h5 id="article-1" class="card-title">January 2023</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione velit debitis quibusdam sunt. Modi qui ex quos sequi
+                ipsam tempore quisquam cumque non, neque sint nihil culpa
+                officia nisi. Nam fugit qui eius asperiores laboriosam est culpa
+                quo voluptates reiciendis, odio tempore illum laborum ratione
+                molestias suscipit, explicabo, non quas.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem id vero laborum eaque. Unde ad porro dolorum omnis quasi. Reiciendis id dicta, obcaecati fugiat, delectus ducimus porro ipsa esse dolorum quo neque quisquam commodi provident, amet cumque nihil necessitatibus quam officia suscipit numquam dolor hic? Voluptatum natus inventore eum.</p>
+              </p>
+            </div>
+            <div class="card-footer text-body-secondary">2 days ago</div>
+          </div>
+          <div class="card mt-3 mb-3 " >
+            <div class="card-header fw-bold">Article-2</div>
+            <div class="card-body">
+              <h5 id="article-2" class="card-title">February 2023</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione velit debitis quibusdam sunt. Modi qui ex quos sequi
+                ipsam tempore quisquam cumque non, neque sint nihil culpa
+                officia nisi. Nam fugit qui eius asperiores laboriosam est culpa
+                quo voluptates reiciendis, odio tempore illum laborum ratione
+                molestias suscipit, explicabo, non quas.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rem id vero laborum eaque. Unde ad porro dolorum omnis quasi. Reiciendis id dicta, obcaecati fugiat, delectus ducimus porro ipsa esse dolorum quo neque quisquam commodi provident, amet cumque nihil necessitatibus quam officia suscipit numquam dolor hic? Voluptatum natus inventore eum.</p>
+              </p>
+            </div>
+            <div class="card-footer text-body-secondary">2 days ago</div>
+          </div>
+
+        </div>
+        <div class="col-md-3" >
+          <div class="card mt-3 mt-md-0">
+            <div class="card-header fw-bold" >2023 Horoscope Reviews</div>
+            <div class="card-body">
+              <div
+              id="horoscope"
+                class="card-title d-flex flex-column overflow-auto"
+                style="height: 150px"
+              >
+                <a href="#">Aries</a>
+                <a href="#">Taurus</a>
+                <a href="#">Gemini</a>
+                <a href="#">Cancer</a>
+                <a href="#">Leo</a>
+                <a href="#">Virgo</a>
+                <a href="#">Libra</a>
+                <a href="#">Scorpio</a>
+                <a href="#">Sagittarius</a>
+                <a href="#">Capricorn</a>
+                <a href="#">Aquarius</a>
+                <a href="#">Pisces</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-header fw-bold ">Articles</div>
+            <div class="list-group article">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+              <a href="#article-1">Article 1 - January 2023</a>
+                
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              > <a href="#article-2">Article 2- February 2023</a>
+                
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Article 3- March 2023
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Article 4- April 2023
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                disabled
+              >
+                Article 5- May 2023
+              </button>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-header fw-bold">Natal Chart Analysis</div>
+            <div class="card-body">
+              <p class="card-text">Make an appointment for fees and details.</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Appointment
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Please select the appropriate date
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-date">
+                        <label for="date"></label>
+                        <br />
+                        <input type="date" id="date" name="date" />
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Create
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="row bg-dark pt-3 px-3">
+      <div
+        class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center"
+        id="social"
+      >
+        <span
+          ><a href="#" class="linkedin"
+            ><i class="fa-brands fa-linkedin fa-2xl text-white px-1"></i></a
+        ></span>
+        <span
+          ><a href="#" class="twitter"
+            ><i class="fa-brands fa-twitter fa-2xl text-white px-1"></i></a
+        ></span>
+        <span
+          ><a href="#"
+            ><i class="fa-brands fa-youtube fa-2xl text-white px-1"></i></a
+        ></span>
+        <span
+          ><a href="#"
+            ><i class="fa-brands fa-instagram fa-2xl text-white px-1"></i></a
+        ></span>
+      </div>
+      <div
+        class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center pt-3 pt-md-0 pe-3"
+      >
+        <div class="mail d-flex me-3">
+          <span
+            ><a href="#"
+              ><i class="fa-regular fa-envelope fa-2xl text-white px-2"></i></a
+          ></span>
+          <p class="text-white">info@astroblog.com</p>
+        </div>
+        <div class="d-flex">
+          <span
+            ><a href="#"
+              ><i class="fa-solid fa-location-dot fa-xl text-white px-2"></i></a
+          ></span>
+          <p class="text-white">İstanbul</p>
+        </div>
+      </div>
+      <p class="text-white text-center">@2023 All Rights Reserved</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
